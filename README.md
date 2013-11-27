@@ -1,4 +1,4 @@
 ObjectModel
 ===========
 
-Fully reflected C++ object model with garbage collection, RPN and infix scripting languages.
+Fully reflected C++ object model with garbage collection, and both RPN infix scripting languages - with full persistence.
