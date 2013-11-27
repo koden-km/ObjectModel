@@ -1,0 +1,77 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+// test lambda functionality
+//
+// all methods and functions are implemented with lambdas, which themselves are
+// based on continuations
+//
+// lambda syntax and semantics closely resemble the implementation in C++0x
+
+{
+	// define and invoke an empty lambda. same as C++0x
+	[](){}();
+
+	// assign a lambda to a variable, invoke it
+	`a := [](){};
+	a();
+
+	// create a lambda, invoke it, and store result to a
+	`a := []() { return 1 + 2; }();
+	assert(a == 3);
+ 
+	// create a lambda, call it b
+	`b := [](x,y) { return x + y; };
+
+	// invoke b given two arguments
+	assert(b(5, 6) == 11);
+	assert(b("foo", "bar") == "foobar");
+
+	// create a lambda that `captures` c at the point of invocation, and also takes two arguments
+	`c := 1;
+	`d := [c](a,b)
+	{
+		return c + a + b;
+	};
+	assert(d(2, 3) == 6);
+	assert(d(4, 5) == 10);
+
+	// d will re-capture c
+	c = 2;
+	assert(d(4, 5) == 11);
+
+	// this function captures q and adds it to itself a given number of times
+	`q := "foo";
+	`c := [q](a) 
+	{ 
+		for (`n := 0; n < a; ++n)
+		{
+			q += q;
+		}
+		return q;
+	};
+	assert(c(3) == "foofoofoofoofoofoofoofoo");
+	assert(c(2) == "foofoofoofoo");
+	assert(c(1) == "foofoo");
+	assert(c(0) == "foo");
+
+	// pass a lamba to a lamba
+	`w1 := [](a) { return a(2, 3); };
+	assert(w1([](x,y) { return x + y; }) == 5);
+	assert(w1([](x,y) { return x * y; }) == 6);
+
+	// more elaborate examples:
+	`w2 := [](a,b) { return a(b); };
+	assert(w2([](x){return x*x;}, 3) == 9);
+
+	// same for this...
+	`e := [c](a,b)
+	{
+		`q := "grok";
+		return a("spam") + c(b);
+	};
+	`f := e([](x){ return x+"bar";  }, 3);
+	assert(f == "spambargrokgrokgrok");
+}
+
+//EOF

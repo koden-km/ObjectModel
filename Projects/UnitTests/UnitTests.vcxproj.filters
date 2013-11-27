@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{54006fd3-62a2-44fa-8968-d7b3d86f13a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{93133e10-a009-44ea-a47c-3fb9f975d7f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tests\TestBinaryStream.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestClassBuilder.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestCompiler.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestContainers.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestDictionary.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestExecutor.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestGarbageCollection.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestObject.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestPathname.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestProperties.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestRecursiveMarking.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestReference.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestReflected.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestRegistry.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\TestScripts.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Precompiled.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\TestArithmetic.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestConditionals.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestGeneral.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestLambda.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestLoops.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestPi.pi">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestScope.rho">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\TestTrace.rho">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Precompiled.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+{
+	if (true)
+	{
+		bin.Print("yay, it's true!\n");
+	}
+	
+}

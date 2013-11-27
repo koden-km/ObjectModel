@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{6aa641f1-6976-4efb-8abe-c07f4fc04c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility\Debug">
+      <UniqueIdentifier>{fe076863-85d1-4700-ab68-35aa38d5d392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility\Debug\Trace">
+      <UniqueIdentifier>{b7ab25c3-9cd4-4e72-90bf-a6444ec973b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Om\Type">
+      <UniqueIdentifier>{f82ddc1a-a03b-432e-a46c-bd4b6893c021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om\Detail">
+      <UniqueIdentifier>{30d8fd3a-a883-486f-af0f-235ffcbc6a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om\Utility">
+      <UniqueIdentifier>{19be664b-970d-4bc3-8408-6d22f5f11ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om\Debug">
+      <UniqueIdentifier>{f3c2b732-a1f3-43b3-bff9-3cdc956b2f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om\Debug\Trace">
+      <UniqueIdentifier>{db8f14f7-df8c-49eb-b678-4e3de87f94cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Om\Debug\Trace\Detail">
+      <UniqueIdentifier>{46303c55-8ed9-41e6-b0a2-bb438ca99797}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bin.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryStream.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassBase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Continuation.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Executor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecutorPerform.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Lambda.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkingContext.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MethodBase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Operation.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Pathname.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RunTime.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StorageBase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\ExceptionBase.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\StringFormat.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Trace.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Debug\Trace\Trace.cpp">
+      <Filter>Source\Utility\Debug\Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Om\Base.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Bin.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\BinaryStream.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Class.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\ClassBase.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\ClassBuilder.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Compiler.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Container.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Continuation.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Deref.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Dictionary.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Exceptions.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Executor.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Field.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Handle.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\IMarkable.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Label.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Lambda.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Method.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\MethodBase.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Object.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\ObjectModel.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Operation.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Pathname.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Pointer.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Precompiled.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Property.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\PropertyBase.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Reflected.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\ReflectedBase.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Registry.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\RunTime.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Storage.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\StorageBase.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Traits.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Tree.h">
+      <Filter>Om</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Builtin.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Macros.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Modifier.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Number.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Operations.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Signature.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Traits.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Type\Type.h">
+      <Filter>Om\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Detail\MakeMethod.h">
+      <Filter>Om\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Detail\MethodPointer.h">
+      <Filter>Om\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\BaseBase.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\ExceptionBase.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\FileLocation.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\Foreach.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\HasTraceStream.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\IToString.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\NonCopyable.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\OmAssert.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\Optional.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\StringFormat.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\StringStream.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Utility\WindowsHeaders.h">
+      <Filter>Om\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Macros.h">
+      <Filter>Om\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace.h">
+      <Filter>Om\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Write.h">
+      <Filter>Om\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Containers.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\ITraceable.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Printer.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Scoped.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Stream.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\StreamBase.h">
+      <Filter>Om\Debug\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Detail\Streamer.h">
+      <Filter>Om\Debug\Trace\Detail</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+
+
+{
+	[ { 1 2 + } ! ];
+
+	{{{bin.Print("hello");}}}
+
+	// define a
+	`a := 2;
+
+	// assign to an existing a
+	a = 3;
+
+	// how to do aliasing (pointers):
+	`b := `c;
+	b := 42;
+
+	assert(c == 42);
+
+	//assert(false);
+
+	// define a multiply
+	//'mul := -> a b { a*b; }
+
+	// another way...
+	//'mul := [*]
+
+	//mul(a,b);
+
+	bin.Print(", world\n");
+}
+
+//EOF

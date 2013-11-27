@@ -1,0 +1,72 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+// for-loops.
+
+{
+	`sum := 0;
+	for (`n := 0; n < 10; ++n)
+	{
+		sum += n;
+	}
+	assert(sum == 45);
+
+	`s := "";
+	for (n = 0; n < 3; ++n)
+	{
+		s += "spam";
+	}
+	assert(s == "spamspamspam");
+
+	sum = 0;
+	`odds := 0;
+	for (n = 0; n < 10; ++n)
+	{
+		if ((n % 2) == 0)
+		{
+			sum += n;
+		}
+		else
+		{
+			odds += n;
+		}
+	}
+	assert(sum == 20);
+	assert(odds == 25);
+
+	sum = 0;
+	for (n = 0; n < 2; ++n)
+	{
+		for (`m := 0; m < 2; ++m)
+		{
+			sum += m + n;
+		}
+	}
+	assert(sum == 4);
+
+
+	// break and continue not implemented
+	/*
+	sum = 0;
+	for (n = 0; n < 5; ++n)
+	{
+		sum += n;
+		if (n == 3)
+			break;
+	}
+	assert(sum == 0 + 1 + 2 + 3);
+
+	sum = 0;
+	for (n = 0; n < 5; ++n)
+	{
+		if (n == 3)
+			continue;
+		trace(n);
+		sum += n;
+	}
+	trace(sum);
+	assert(sum == 0 + 1 + 2 + 4);
+	*/
+}
+
+//EOF

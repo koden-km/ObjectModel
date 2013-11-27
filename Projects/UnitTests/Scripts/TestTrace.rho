@@ -1,0 +1,28 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+
+
+`n := 10;
+// traces to stdout, and the VisualStudio output window. 
+// click on the output window to be brought back to the script source
+trace(n);	
+trace(n + 2);
+`v := new Vector;
+v.push_back(2);
+v.push_back("foo");
+v.push_back(new Vector);
+v.at(2L).push_back("bar");
+trace(v);
+
+// resulting output in debug window, and stdout:
+//Tests/TraceTest.rho(6): n: 10
+//Tests/TraceTest.rho(7): 12
+//Tests/TraceTest.rho(13): v:
+//	{Vector:
+//		{int: 2}
+//		{String: foo}
+//		{Vector: 
+//			{String: bar}
+//		}
+//	}

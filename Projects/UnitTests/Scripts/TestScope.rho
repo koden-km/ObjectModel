@@ -1,0 +1,49 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+// test that scoping works correctly
+
+// globals
+`g := 1;
+assert(exists(`g));
+
+{
+	// local
+	`a := 1;
+	assert(exists(`a));
+
+	{
+		// nested block
+		assert(exists(`a));
+	}
+
+	delete a;
+	assert(!exists(`a));
+
+	`c := 1;
+
+	// lambdas have their own scope
+	`w := []()
+	{
+		// can't see outer variables
+		assert(!exists(`c));
+	};
+	w();
+
+	// capture c
+	`q := [c]()
+	{
+		// now can see c (copied by value)
+		assert(exists(`c));
+
+		// change local copy of c
+		c = 2;
+	};
+	q();
+
+	// ensure not changed by q
+	assert(c == 1);
+}
+
+
+//EOF

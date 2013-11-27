@@ -1,0 +1,51 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+// test conditional statements
+
+{
+	`inside := false;
+	assert(!inside);
+
+	// test if-then
+	if (true)
+	{
+		inside = true;
+	}
+	assert(inside);
+
+	// ensure false expressions don't execute the associated block
+	inside = false;
+	if (false)
+	{
+		inside = true;
+	}
+	assert(!inside);
+
+	// test if-then-else
+	inside = false;
+	if (false)
+	{
+		assert(false);
+	}
+	else
+	{
+		inside = true;
+	}
+	assert(inside);
+
+	// test if-then-else
+	inside = false;
+	if (true)
+	{
+		inside = true;
+	}
+	else
+	{
+		assert(false);
+	}
+	assert(inside);
+
+}
+
+//EOF

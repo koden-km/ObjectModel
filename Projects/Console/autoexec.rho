@@ -1,0 +1,9 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+{
+	[a,b](c,d){x;};
+	//bin.Thaw(bin.Freeze(new Player));
+}
+
+//EOF

@@ -1,0 +1,41 @@
+// (C) 2009 Christian.Schladetsch@Gmail.com.
+// (C) 2009 Blue Lion Software Limited.
+
+// pi is the reverse-poish notation language that the executor understands.
+// typically, you would script in rho, which uses infix notation and compiles to pi.
+// however, you can write in pi directly, and even mix the two:
+
+rpn
+[
+	`a { 1 2 + } :=
+	a &
+	3 == assert	
+	
+	`n 0 :=
+	
+	{ "foo" }
+	{ "bar" }
+	n 0 == ?&&
+	"foo" == assert
+	
+	{ "foo" }
+	{ "bar" }
+	n 1 == ?&&
+	"bar" == assert
+
+	1 2 3 4 5 6 + + + + + 21 == assert
+
+];
+
+// we can also mix pi with rho
+`n := rpn[2 3 +];
+assert(n == 5);
+
+`m := rpn[ {+} ];
+assert(m(1,2) == 3);
+assert(m("foo","bar") == "foobar");
+
+m = rpn[ {+ *} ];
+assert(m(2,3,4) == 14);
+
+//EOF

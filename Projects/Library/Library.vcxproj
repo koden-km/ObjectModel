@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugCLR|Win32">
+      <Configuration>DebugCLR</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimised|Win32">
+      <Configuration>Optimised</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OptimiseWithSymbols|Win32">
+      <Configuration>OptimiseWithSymbols</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OptWithSym|Win32">
+      <Configuration>OptWithSym</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C96417BD-9826-442C-B8FB-5A6675B36C15}</ProjectGuid>
+    <RootNamespace>Library</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimised|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimiseWithSymbols|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimised|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OptimiseWithSymbols|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimiseWithSymbols|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimised|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'">
+    <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>c:\source\boost\trunk;C:\Source\google\ObjectModel\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Om/Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4180;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Include;c:\gg\source;c:\source\boost\trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Om/Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OptimiseWithSymbols|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Include;C:\Local\EffectSystem\Display;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Om/Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat />
+      <DisableSpecificWarnings>4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimised|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Include;C:\Local\EffectSystem\Display;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Om/Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <DisableSpecificWarnings>4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Include;C:\Local\EffectSystem\Display;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Om/Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4180;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bin.cpp" />
+    <ClCompile Include="BinaryStream.cpp" />
+    <ClCompile Include="ClassBase.cpp" />
+    <ClCompile Include="Containers.cpp" />
+    <ClCompile Include="Continuation.cpp" />
+    <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="Executor.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4180;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'">4180;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="ExecutorPerform.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Lambda.cpp" />
+    <ClCompile Include="MarkingContext.cpp" />
+    <ClCompile Include="MethodBase.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Operation.cpp" />
+    <ClCompile Include="Pathname.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="RunTime.cpp" />
+    <ClCompile Include="StorageBase.cpp" />
+    <ClCompile Include="Utility\ExceptionBase.cpp" />
+    <ClCompile Include="Utility\StringFormat.cpp" />
+    <ClCompile Include="Utility\Trace.cpp" />
+    <ClCompile Include="Utility\Debug\Trace\Trace.cpp" />
+    <ClCompile Include="Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='OptWithSym|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='OptimiseWithSymbols|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Optimised|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\Om\Base.h" />
+    <ClInclude Include="..\..\Include\Om\Bin.h" />
+    <ClInclude Include="..\..\Include\Om\BinaryStream.h" />
+    <ClInclude Include="..\..\Include\Om\Class.h" />
+    <ClInclude Include="..\..\Include\Om\ClassBase.h" />
+    <ClInclude Include="..\..\Include\Om\ClassBuilder.h" />
+    <ClInclude Include="..\..\Include\Om\Compiler.h" />
+    <ClInclude Include="..\..\Include\Om\Container.h" />
+    <ClInclude Include="..\..\Include\Om\Continuation.h" />
+    <ClInclude Include="..\..\Include\Om\Deref.h" />
+    <ClInclude Include="..\..\Include\Om\Dictionary.h" />
+    <ClInclude Include="..\..\Include\Om\Exceptions.h" />
+    <ClInclude Include="..\..\Include\Om\Executor.h" />
+    <ClInclude Include="..\..\Include\Om\Field.h" />
+    <ClInclude Include="..\..\Include\Om\Handle.h" />
+    <ClInclude Include="..\..\Include\Om\IMarkable.h" />
+    <ClInclude Include="..\..\Include\Om\Label.h" />
+    <ClInclude Include="..\..\Include\Om\Lambda.h" />
+    <ClInclude Include="..\..\Include\Om\Method.h" />
+    <ClInclude Include="..\..\Include\Om\MethodBase.h" />
+    <ClInclude Include="..\..\Include\Om\Object.h" />
+    <ClInclude Include="..\..\Include\Om\ObjectModel.h" />
+    <ClInclude Include="..\..\Include\Om\Operation.h" />
+    <ClInclude Include="..\..\Include\Om\Pathname.h" />
+    <ClInclude Include="..\..\Include\Om\Pointer.h" />
+    <ClInclude Include="..\..\Include\Om\Precompiled.h" />
+    <ClInclude Include="..\..\Include\Om\Property.h" />
+    <ClInclude Include="..\..\Include\Om\PropertyBase.h" />
+    <ClInclude Include="..\..\Include\Om\Reflected.h" />
+    <ClInclude Include="..\..\Include\Om\ReflectedBase.h" />
+    <ClInclude Include="..\..\Include\Om\Registry.h" />
+    <ClInclude Include="..\..\Include\Om\RunTime.h" />
+    <ClInclude Include="..\..\Include\Om\Storage.h" />
+    <ClInclude Include="..\..\Include\Om\StorageBase.h" />
+    <ClInclude Include="..\..\Include\Om\Traits.h" />
+    <ClInclude Include="..\..\Include\Om\Tree.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Builtin.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Macros.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Modifier.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Number.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Operations.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Signature.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Traits.h" />
+    <ClInclude Include="..\..\Include\Om\Type\Type.h" />
+    <ClInclude Include="..\..\Include\Om\Detail\MakeMethod.h" />
+    <ClInclude Include="..\..\Include\Om\Detail\MethodPointer.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\BaseBase.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\ExceptionBase.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\FileLocation.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\Foreach.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\HasTraceStream.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\IToString.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\NonCopyable.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\OmAssert.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\Optional.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\StringFormat.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\StringStream.h" />
+    <ClInclude Include="..\..\Include\Om\Utility\WindowsHeaders.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Macros.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Write.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Containers.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\ITraceable.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Printer.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Scoped.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Stream.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\StreamBase.h" />
+    <ClInclude Include="..\..\Include\Om\Debug\Trace\Detail\Streamer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
