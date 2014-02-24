@@ -59,7 +59,13 @@ void Bin::Print(Object const &Q) const
 Object/*Pointer<List>*/ Bin::GetContents(Object const &Q) const
 {
 	std::vector<Label> names;
+		
 	Q.ForEachChild(bind(&std::vector<Label>::push_back, &names, bind(&Object::GetName, _1)));
+	//for (auto kv : Q.GetStorage().GetDictionary())
+	{
+	}
+	// ALSO ForEachProperty(fun);
+
 	Pointer<Vector> ret = New<Vector>();
 	foreach (Label const &label, names)
 		ret->push_back(New(label));

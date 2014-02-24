@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoLib", "Projects\DemoLib
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C", "..\..\External\libantlr3c-3.1\C.vcproj", "{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Projects\Properties\Properties.csproj", "{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -517,6 +519,46 @@ Global
 		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Mixed Platforms.Build.0 = ReleaseDLL|Win32
 		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.ActiveCfg = ReleaseDLL|Win32
 		{0F0FE03A-78F3-4B34-9DCE-0CDFF1FB5C40}.ReleaseDLL|Win32.Build.0 = ReleaseDLL|Win32
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugCLR|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugCLR|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugCLR|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugCLR|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugCLR|Win32.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugDLL|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugDLL|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugDLL|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugDLL|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.DebugDLL|Win32.ActiveCfg = Debug|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Optimised|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Optimised|Any CPU.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Optimised|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Optimised|Mixed Platforms.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Optimised|Win32.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptimiseWithSymbols|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptimiseWithSymbols|Any CPU.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptimiseWithSymbols|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptimiseWithSymbols|Mixed Platforms.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptimiseWithSymbols|Win32.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptWithSym|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptWithSym|Any CPU.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptWithSym|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptWithSym|Mixed Platforms.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.OptWithSym|Win32.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.Release|Win32.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.ReleaseDLL|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.ReleaseDLL|Any CPU.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.ReleaseDLL|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.ReleaseDLL|Mixed Platforms.Build.0 = Release|Any CPU
+		{B1DD108C-225F-4BBE-B019-94ADA7A4BE2C}.ReleaseDLL|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

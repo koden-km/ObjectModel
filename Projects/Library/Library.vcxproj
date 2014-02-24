@@ -96,6 +96,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <IncludePath>c:\sdk\boost;C:\Dev\ObjectModel\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDK\Boost\stage\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>

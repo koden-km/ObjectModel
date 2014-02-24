@@ -5,3 +5,5 @@ ObjectModel.opensdf
 ObjectModel.sdf
 UpgradeLog.XML
 UpgradeLog.htm
+ipch/
+*.suo
