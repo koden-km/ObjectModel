@@ -55,7 +55,7 @@ void TraceContinuation(int number, Debug::StringStream &S, Pointer<Continuation>
 	else
 	{
 		std::vector<String> idents;
-		cont->Scope.ForEachChild(bind(&std::vector<String>::push_back, &idents, bind(&Object::GetIdent, _1)));
+		cont->Scope.ForEachChild([&idents](StorageBase const &obj) { idents.push_back(obj.GetIdent()); });
 		foreach_delim_(String const &ident, idents, ", ", S << ident);
 	}
 	if (!with_code)

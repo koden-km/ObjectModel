@@ -60,11 +60,8 @@ Object/*Pointer<List>*/ Bin::GetContents(Object const &Q) const
 {
 	std::vector<Label> names;
 		
-	Q.ForEachChild(bind(&std::vector<Label>::push_back, &names, bind(&Object::GetName, _1)));
-	//for (auto kv : Q.GetStorage().GetDictionary())
-	{
-	}
-	// ALSO ForEachProperty(fun);
+	//Q.ForEachChild(bind(&std::vector<Label>::push_back, &names, bind(&Object::GetName, _1)));
+	Q.ForEachChild([&names](StorageBase const &obj) { names.push_back(obj.GetName()); });
 
 	Pointer<Vector> ret = New<Vector>();
 	foreach (Label const &label, names)

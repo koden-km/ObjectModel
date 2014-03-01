@@ -101,9 +101,6 @@
     <ClCompile Include="Utility\Trace.cpp">
       <Filter>Source\Utility</Filter>
     </ClCompile>
-    <ClCompile Include="Utility\Debug\Trace\Trace.cpp">
-      <Filter>Source\Utility\Debug\Trace</Filter>
-    </ClCompile>
     <ClCompile Include="Precompiled.cpp">
       <Filter>Source</Filter>
     </ClCompile>

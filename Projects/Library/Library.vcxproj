@@ -236,7 +236,6 @@
     <ClCompile Include="Utility\ExceptionBase.cpp" />
     <ClCompile Include="Utility\StringFormat.cpp" />
     <ClCompile Include="Utility\Trace.cpp" />
-    <ClCompile Include="Utility\Debug\Trace\Trace.cpp" />
     <ClCompile Include="Precompiled.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugCLR|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

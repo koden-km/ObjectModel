@@ -121,7 +121,7 @@ void StorageBase::SetMarked(MarkingContext &mark) const
 	if (!mark.Enter(GetHandle()))
 		return;
 	marked = mark.Mark();
-	ForEachChild(boost::bind(&StorageBase::SetMarked, _1, ref(mark)));
+	ForEachChild([&mark](StorageBase const& marked) { marked.SetMarked(mark); });
 	klass->MarkContained(*this, mark);
 }
 

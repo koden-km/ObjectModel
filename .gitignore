@@ -7,3 +7,4 @@ UpgradeLog.XML
 UpgradeLog.htm
 ipch/
 *.suo
+Bin/
