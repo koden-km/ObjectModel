@@ -97,6 +97,7 @@
     <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)/Obj/$(ProjectName)/$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>c:\sdk\Boost;c:\dev\external\gtest-1.7.0\include;c:\dev\objectmodel\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)/Bin/$(ProjectName)/$(Configuration)\</OutDir>
@@ -128,7 +129,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>C:\Source\External\gtest-1.4.0\include;$(ProjectDir);$(SolutionDir)/Include;C:\source\boost\trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -253,7 +254,9 @@
   <ItemGroup>
     <ClCompile Include="Tests\TestBinaryStream.cpp" />
     <ClCompile Include="Tests\TestClassBuilder.cpp" />
-    <ClCompile Include="Tests\TestCompiler.cpp" />
+    <ClCompile Include="Tests\TestCompiler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Tests\TestContainers.cpp" />
     <ClCompile Include="Tests\TestDictionary.cpp" />
     <ClCompile Include="Tests\TestExecutor.cpp" />
@@ -289,13 +292,8 @@
     <ClInclude Include="Precompiled.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Compiler\Compiler.vcxproj">
-      <Project>{5b7b59d3-bef3-4678-af00-272422a79afb}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\Library\Library.vcxproj">
       <Project>{c96417bd-9826-442c-b8fb-5a6675b36c15}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

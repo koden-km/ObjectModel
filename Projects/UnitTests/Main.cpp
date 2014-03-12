@@ -6,9 +6,9 @@
 #include <iostream>
 
 #ifdef _DEBUG
-#pragma comment(lib, "C:/Source/External/gtest-1.4.0/msvc/gtest/Debug/gtestd.lib")
+#pragma comment(lib, "C:/Dev/External/gtest-1.7.0/msvc/gtest/Debug/gtestd.lib")
 #else
-#pragma comment(lib, "C:/Source/External/gtest-1.4.0/msvc/gtest/Debug/gtest.lib")
+#pragma comment(lib, "C:/Dev/External/gtest-1.7.0/msvc/gtest/Debug/gtest.lib")
 #endif
 
 int main(int argc, char* argv[])

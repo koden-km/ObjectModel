@@ -74,10 +74,7 @@ TEST_F(TestGarbageCollection, TestContainer)
 
 }
 
-// epic compiler fail.
-// the compiler was matching the traits defined in another .cpp file!!!???
-// try renaming this to Foobar; the tests will crash, as it attempts to use the Foobar in TestProperties.cpp !! ?? what.the.fuck.
-struct Foobar2
+static struct Foobar2
 {
 	Field<int> pnum;
 	Field<Vector> vec;
@@ -110,7 +107,8 @@ TEST_F(TestGarbageCollection, TestProperties)
 			//("dangling", &Foobar2::dangling)
 		;
 	Pointer<Foobar2> foo = R.New<Foobar2>();
-	return;
+	//return;
+
 	foo->pnum = R.New<int>();
 	foo->vec = R.New<Vector>();
 	foo->dangling = R.New<int>();
